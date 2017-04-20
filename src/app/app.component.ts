@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  display = "none";
+
+  toggleMenu() {
+  	this.display = this.display === "block" ? "none" : "block";
+  }
 }

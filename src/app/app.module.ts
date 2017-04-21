@@ -2,19 +2,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { MdButtonModule, MdProgressSpinnerModule, MdSidenavModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
-import { NavSideMenuComponent } from './nav-side-menu/nav-side-menu.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NavSideMenuComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    MdButtonModule,
+    MdProgressSpinnerModule,
+    MdSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]

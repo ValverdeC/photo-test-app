@@ -22,3 +22,20 @@
 	width: 100%;
 	height: 200px;
 }
+
+.sidenav-container {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+.sidenav-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.sidenav {
+	padding: 20px;
+	width: 20%;
+	background-color: white;
+}

@@ -1,9 +1,16 @@
-<header class="header-navigation-bar">
+<md-sidenav-container class="sidenav-container">
+	<md-sidenav #sidenav class="sidenav" align="start" mode="over">
+		Menu
+	</md-sidenav>
 
-</header>
-<app-nav-side-menu [style.display]="display">
+	<header class="header-navigation-bar">
+		<button md-button (click)="sidenav.toggle()">
+			Open me !
+		</button>
+	</header>
 
-</app-nav-side-menu>
-<div class="logo-bar">
-		
-</div>
+	<div class="logo-bar">
+		<button md-raised-button (click)="openDialog()">My first flat button</button>
+	</div>
+
+</md-sidenav-container>

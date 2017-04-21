@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { MdButtonModule, MdProgressSpinnerModule, MdSidenavModule } from '@angular/material';
+import { MdButtonModule, MdProgressSpinnerModule, MdSidenavModule, MdIconModule, MdToolbarModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 
@@ -16,7 +16,9 @@ import { AppComponent } from './app.component';
     HttpModule,
     MdButtonModule,
     MdProgressSpinnerModule,
-    MdSidenavModule
+    MdSidenavModule,
+    MdIconModule,
+    MdToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

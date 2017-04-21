@@ -1,16 +1,25 @@
-<md-sidenav-container class="sidenav-container">
-	<md-sidenav #sidenav class="sidenav" align="start" mode="over">
+<md-sidenav-container>
+	<md-sidenav #sidenav align="start" mode="over">
 		Menu
 	</md-sidenav>
 
-	<header class="header-navigation-bar">
-		<button md-button (click)="sidenav.toggle()">
-			Open me !
-		</button>
-	</header>
+	<md-toolbar color="primary">
+		<!--a md-icon-button class="button" (click)="sidenav.toggle()">
+			<md-icon class="menu-button" >menu</md-icon>
+		</a-->
+
+		<a class="navbar-item" (click)="sidenav.toggle()">
+			<md-icon style="font-size: 36px">account_circle</md-icon>
+		</a>
+
+		<a class="navbar-item">
+			<div>Ma collection</div>
+		</a>
+
+	</md-toolbar>
 
 	<div class="logo-bar">
-		<button md-raised-button (click)="openDialog()">My first flat button</button>
+		<!--button md-raised-button>My first flat button</button-->
 	</div>
 
 </md-sidenav-container>

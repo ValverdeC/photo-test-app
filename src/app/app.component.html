@@ -12,14 +12,22 @@
 			<md-icon style="font-size: 36px">account_circle</md-icon>
 		</a>
 
-		<a class="navbar-item">
+		<a class="navbar-item" [mdMenuTriggerFor]="menu">
 			<div>Ma collection</div>
 		</a>
 
 	</md-toolbar>
 
 	<div class="logo-bar">
-		<!--button md-raised-button>My first flat button</button-->
+		
 	</div>
+
+	<md-menu #menu="mdMenu" [overlapTrigger]="false">
+		<button md-menu-item>Test</button>
+		<button md-menu-item>Test</button>
+		<button md-menu-item>Test</button>
+		<button md-menu-item>Test</button>
+		<button md-menu-item>Test</button>
+	</md-menu>
 
 </md-sidenav-container>

@@ -24,35 +24,38 @@ md-slider {
 	width: 100%;
 	height: 200px;
 	text-align: center;
+	margin-top: 100px;
 }
 
 md-toolbar {
 	font-size: 20px;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	text-transform: uppercase;
-	position: relative;
+	position: absolute;
 	box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+	z-index: 1;
+	height: 100px;
+}
+
+:host >>> md-toolbar-row {
+	height: 100px;
 }
 
 md-sidenav-container {
 	margin: 0;
 	width: 100%;
 	height: 100%;
+	z-index: 0;
 }
 
 md-sidenav {
 	padding: 20px;
 	width: 20%;
 	text-align: center;
-}
-
-.button {
-	padding: 0;
-	margin: 0;
+	margin-top: 100px;
 }
 
 .navbar-item {
-	display: flex;
 	height: 100%;
 	justify-content: center;
 	align-items: center;
@@ -62,10 +65,18 @@ md-sidenav {
 }
 
 .mat-icon {
-	height: 36px;
-	width: 36px;
+	height: 48px;
+	width: 48px;
 }
 
 .navbar-item:hover {
 	background-color: rgb(48, 66, 166);
+}
+
+.end-navbar-icon {
+	flex: 1 1 auto;
+}
+
+.main-layout {
+	padding: 50px;
 }

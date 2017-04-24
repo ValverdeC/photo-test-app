@@ -4,9 +4,6 @@
 	</md-sidenav>
 
 	<md-toolbar color="primary">
-		<!--a md-icon-button class="button" (click)="sidenav.toggle()">
-			<md-icon class="menu-button" >menu</md-icon>
-		</a-->
 
 		<a class="navbar-item" (click)="sidenav.toggle()">
 			<md-icon style="font-size: 36px">account_circle</md-icon>
@@ -19,13 +16,13 @@
 	</md-toolbar>
 
 	<div class="logo-bar">
-
+		<md-slider min="10" max="20" step="1" value="10" #sizeSlider></md-slider>
 	</div>
 
 	<div>
 		<gallery
-			[flexBorderSize]="3"
-			[flexImageSize]="17">
+			[flexBorderSize]="8"
+			[flexImageSize]=sizeSlider.value>
 		</gallery>
 	</div>
 

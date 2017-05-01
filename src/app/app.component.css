@@ -1,31 +1,10 @@
-/*.md-toolbar {
-	color: #008975;
-	margin: 0;
-	padding: 15px 10px;
-	box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
-	position: relative;
-	list-style-type: none;
-	font-size: 20px;
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	flex-direction: row;
-	box-sizing: border-box;
-	align-self: stretch;
-	align-items: center;
-	justify-content: flex-start;
-	text-transform: uppercase;
-}*/
-
 md-slider {
 	cursor: pointer;
 }
 
-.logo-bar {
+/*.logo-bar {
 	background-color: #3498db;
-	width: 100%;
-	height: 200px;
-	text-align: center;
-	margin-top: 100px;
-}
+}*/
 
 md-toolbar {
 	font-size: 20px;
@@ -33,7 +12,7 @@ md-toolbar {
 	text-transform: uppercase;
 	position: absolute;
 	box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
-	z-index: 1;
+	z-index: 2;
 	height: 100px;
 }
 
@@ -45,7 +24,7 @@ md-sidenav-container {
 	margin: 0;
 	width: 100%;
 	height: 100%;
-	z-index: 0;
+	z-index: 1;
 }
 
 md-sidenav {
@@ -77,6 +56,19 @@ md-sidenav {
 	flex: 1 1 auto;
 }
 
-.main-layout {
-	padding: 50px;
+#first-slide {
+	background-image: url(/assets/img/background-test.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+}
+
+#second-slide {
+	padding: 100px;
+}
+
+/deep/ .mat-sidenav-content {
+	transform: none !important;
 }

@@ -56,19 +56,42 @@ md-sidenav {
 	flex: 1 1 auto;
 }
 
-#first-slide {
-	background-image: url(/assets/img/background-test.jpg);
+.slide {
+	height: 500px;
+}
+
+.photo-slide {
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 500px;
+}
+
+#first-slide {
+	background-image: url(/assets/img/background-test.jpg);
 }
 
 #second-slide {
 	padding: 100px;
 }
 
+#third-slide {
+	background-image: url(/assets/img/background-test.jpg);
+}
+
+#fourth-slide {
+	padding: 100px;
+}
+
 /deep/ .mat-sidenav-content {
 	transform: none !important;
+}
+
+.example-card {
+  width: 400px;
+}
+
+.example-header-image {
+  background-image: url(/assets/img/celia_profile.png);
+  background-size: cover;
 }

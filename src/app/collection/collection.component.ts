@@ -36,7 +36,7 @@ export class CollectionComponent implements OnInit {
   }
 
   clothings: IClothing[] = [{
-  	headerImageUrl: "/assets/img/celia_profile.png",
+  	headerImageUrl: "./assets/img/celia_profile.png",
   	title: "Shiba Inu",
   	subtitle: "Dog Breed",
   	imageUrl: "./assets/img/shiba.jpg",
@@ -44,7 +44,7 @@ export class CollectionComponent implements OnInit {
     type: "Top"
   },
   {
-  	headerImageUrl: "/assets/img/celia_profile.png",
+  	headerImageUrl: "./assets/img/celia_profile.png",
   	title: "Shiba Inu",
   	subtitle: "Dog Breed",
   	imageUrl: "./assets/img/shiba.jpg",
@@ -52,7 +52,7 @@ export class CollectionComponent implements OnInit {
     type: "Bas"
   },
   {
-  	headerImageUrl: "/assets/img/celia_profile.png",
+  	headerImageUrl: "./assets/img/celia_profile.png",
   	title: "Shiba Inu",
   	subtitle: "Dog Breed",
   	imageUrl: "./assets/img/shiba.jpg",
@@ -60,7 +60,7 @@ export class CollectionComponent implements OnInit {
     type: "Robe / Combi"
   },
   {
-    headerImageUrl: "/assets/img/celia_profile.png",
+    headerImageUrl: "./assets/img/celia_profile.png",
     title: "Shiba Inu",
     subtitle: "Dog Breed",
     imageUrl: "./assets/img/shiba.jpg",
@@ -68,7 +68,7 @@ export class CollectionComponent implements OnInit {
     type: "Par-Dessus"
   },
   {
-    headerImageUrl: "/assets/img/celia_profile.png",
+    headerImageUrl: "./assets/img/celia_profile.png",
     title: "Shiba Inu",
     subtitle: "Dog Breed",
     imageUrl: "./assets/img/shiba.jpg",
@@ -76,7 +76,7 @@ export class CollectionComponent implements OnInit {
     type: "Top"
   },
   {
-    headerImageUrl: "/assets/img/celia_profile.png",
+    headerImageUrl: "./assets/img/celia_profile.png",
     title: "Shiba Inu",
     subtitle: "Dog Breed",
     imageUrl: "./assets/img/shiba.jpg",
@@ -84,7 +84,7 @@ export class CollectionComponent implements OnInit {
     type: "Bas"
   },
   {
-    headerImageUrl: "/assets/img/celia_profile.png",
+    headerImageUrl: "./assets/img/celia_profile.png",
     title: "Shiba Inu",
     subtitle: "Dog Breed",
     imageUrl: "./assets/img/shiba.jpg",
@@ -92,7 +92,7 @@ export class CollectionComponent implements OnInit {
     type: "Accessoires"
   },
   {
-    headerImageUrl: "/assets/img/celia_profile.png",
+    headerImageUrl: "./assets/img/celia_profile.png",
     title: "Shiba Inu",
     subtitle: "Dog Breed",
     imageUrl: "./assets/img/shiba.jpg",
@@ -100,7 +100,7 @@ export class CollectionComponent implements OnInit {
     type: "Top"
   },
   {
-    headerImageUrl: "/assets/img/celia_profile.png",
+    headerImageUrl: "./assets/img/celia_profile.png",
     title: "Shiba Inu",
     subtitle: "Dog Breed",
     imageUrl: "./assets/img/shiba.jpg",

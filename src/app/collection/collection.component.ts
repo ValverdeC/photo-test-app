@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { IClothing } from './clothing';
+import { MdDialog } from '@angular/material';
+
+import { DetailDialogOverviewComponent } from './detail-dialog-overview/detail-dialog-overview.component';
+
 
 @Component({
   templateUrl: './collection.component.html',
@@ -12,15 +16,6 @@ export class CollectionComponent implements OnInit {
     myVar: 'Tous'
   };
 
-  test: IClothing[] = [{
-    headerImageUrl: "test",
-    title: "test",
-    subtitle: "test",
-    imageUrl: "test",
-    description: "test",
-    type: "test"
-  }]
-
   clothingList = [
     'Tous',
     'Par-Dessus',
@@ -30,9 +25,13 @@ export class CollectionComponent implements OnInit {
     'Accessoires'
   ];
 
-  constructor() { }
-
   ngOnInit() {
+  }
+
+  constructor(public dialog: MdDialog) {}
+
+  openDialog() {
+    this.dialog.open(DetailDialogOverviewComponent);
   }
 
   clothings: IClothing[] = [{

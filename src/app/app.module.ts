@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { MdButtonModule, MdProgressSpinnerModule, MdSidenavModule, MdIconModule, MdToolbarModule, MdMenuModule, MdSliderModule, MdCardModule, MdRadioModule } from '@angular/material';
+import { MdButtonModule, MdProgressSpinnerModule, MdSidenavModule, MdIconModule, MdToolbarModule, MdMenuModule, MdSliderModule, MdCardModule, MdRadioModule, MdDialogModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Angular2ImageGalleryModule } from 'angular2-image-gallery';
 import { RouterModule } from '@angular/router';
@@ -16,6 +16,7 @@ import 'hammerjs';
 import { CollectionComponent } from './collection/collection.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { SafePipe } from './shared/pipes/safe.pipe';
+import { DetailDialogOverviewComponent } from './collection/detail-dialog-overview/detail-dialog-overview.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { SafePipe } from './shared/pipes/safe.pipe';
     CollectionComponent,
     HomePageComponent,
     SafePipe,
+    DetailDialogOverviewComponent
   ],
   imports: [
     BrowserModule,
@@ -45,9 +47,11 @@ import { SafePipe } from './shared/pipes/safe.pipe';
         { path: '', redirectTo: 'home', pathMatch: 'full'},
         { path: '**', redirectTo: 'home', pathMatch: 'full'}
     ]),
-    MdRadioModule
+    MdRadioModule,
+    MdDialogModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ DetailDialogOverviewComponent ]
 })
 export class AppModule { }

@@ -1,14 +1,19 @@
 <md-toolbar color="primary">
 
-	<a class="navbar-item" [mdMenuTriggerFor]="menu">
-		<div>Ma collection</div>
-	</a>
+	<span class="navbar-item" [routerLink]="['/home']">
+		<img src="./favicon.ico">
+		<div style="margin-left: 20px;">Les Pipelettes</div>
+	</span>
+
+	<span class="navbar-item" [routerLink]="['/collection']">
+		<div>Collection Printemps - Été 2018</div>
+	</span>
 	
 	<span class="end-navbar-icon"></span>
 	
-	<a class="navbar-item" (click)="sidenav.toggle()">
+	<span class="navbar-item" (click)="sidenav.toggle()">
 		<md-icon style="font-size: 48px">account_circle</md-icon>
-	</a>
+	</span>
 
 </md-toolbar>
 
@@ -17,38 +22,8 @@
 		<img src="./assets/img/celia_profile.png" style="width: 200px;height: 200px;">
 	</md-sidenav>
 
-	<!--div class="logo-bar">
-		<md-slider min="10" max="20" step="1" value="10" #sizeSlider></md-slider>
-		<gallery
-			[flexBorderSize]="8"
-			[flexImageSize]="10">
-		</gallery>
-	</div-->
+	<router-outlet></router-outlet>
 
-	<div id="first-slide" class="slide photo-slide"><div class="filter"></div></div>
-	<div id="second-slide" class="slide photo-slide">
-		<md-card class="example-card">
-		  <md-card-header>
-		  	<div md-card-avatar class="example-header-image"></div>
-		    <md-card-title>Shiba Inu</md-card-title>
-		    <md-card-subtitle>Dog Breed</md-card-subtitle>
-		  </md-card-header>
-		  <img md-card-image src="./assets/img/shiba.jpg">
-		  <md-card-content>
-		    <p>
-		      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-		      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-		      bred for hunting
-		    </p>
-		  </md-card-content>
-		  <md-card-actions>
-		    <button md-button>LIKE</button>
-		    <button md-button>SHARE</button>
-		  </md-card-actions>
-		</md-card>
-	</div>
-	<div id="third-slide" class="slide photo-slide"><div class="filter"></div></div>
-	<div id="fourth-slide" class="slide"></div>
 </md-sidenav-container>
 
 <md-menu #menu="mdMenu" [overlapTrigger]="false">
@@ -61,3 +36,11 @@
 	<button md-menu-item>Test</button>
 	<button md-menu-item>Test</button>
 </md-menu>
+
+<!--div class="logo-bar">
+	<md-slider min="10" max="20" step="1" value="10" #sizeSlider></md-slider>
+	<gallery
+		[flexBorderSize]="8"
+		[flexImageSize]="10">
+	</gallery>
+</div-->

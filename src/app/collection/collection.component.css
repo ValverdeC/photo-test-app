@@ -1,0 +1,19 @@
+.main-content {
+	margin-top: 100px;
+	text-align: center;
+}
+
+.example-card {
+  width: 400px;
+}
+
+.example-header-image {
+  background-image: url(/assets/img/celia_profile.png);
+  background-size: cover;
+}
+
+.cards {
+	display: inline-block;
+	text-align: left;
+	margin: 100px 50px 0px 50px;
+}

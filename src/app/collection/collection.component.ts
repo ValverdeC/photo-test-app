@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IClothing } from './clothing';
-import { MdDialog } from '@angular/material';
+import { MdDialog, MdDialogRef } from '@angular/material';
 
 import { DetailDialogOverviewComponent } from './detail-dialog-overview/detail-dialog-overview.component';
 
@@ -30,8 +30,8 @@ export class CollectionComponent implements OnInit {
 
   constructor(public dialog: MdDialog) {}
 
-  openDialog() {
-    this.dialog.open(DetailDialogOverviewComponent);
+  openDialog(myClothing) {
+    let dialogref = this.dialog.open(DetailDialogOverviewComponent, { data: myClothing});
   }
 
   clothings: IClothing[] = [{

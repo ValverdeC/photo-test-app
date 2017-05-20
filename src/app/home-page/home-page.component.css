@@ -11,10 +11,13 @@
 
 #first-slide {
 	margin-top: 100px;
-	background-image: url(/assets/img/background-test.jpg);
+	background-color: transparent;
+	width: 100%;
+	height: 100%;
 }
 
 #second-slide {
+	background-color: white;
 }
 
 #third-slide {
@@ -22,6 +25,7 @@
 }
 
 #fourth-slide {
+	background-color: white;
 }
 
 /deep/ .mat-sidenav-content {
@@ -32,4 +36,11 @@
 	background-color: rgba(0, 0, 0, 0.5);
 	height: 100%;
 	width: 100%;
+}
+
+.video {
+	width: 100%;
+	margin-top: 100px;
+	position: fixed;
+	z-index: -50;
 }

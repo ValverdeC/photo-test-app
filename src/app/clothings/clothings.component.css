@@ -1,0 +1,52 @@
+.main-content {
+	margin-top: 100px;
+	text-align: center;
+	height: 100%;
+}
+
+.example-card {
+  width: 400px;
+}
+
+.example-header-image {
+  background-image: url(/assets/img/celia_profile.png);
+  background-size: cover;
+}
+
+.cards {
+	display: inline-block;
+	text-align: left;
+}
+
+.sidemenu {
+	width: 250px;
+	height: 100%;
+	background-color: transparent;
+	float: left;
+	position: fixed;
+	padding-top: 100px;
+	text-align: right;
+}
+
+.cards-content {
+	margin-left: 250px;
+	padding-top: 50px;
+}
+
+.radio-group {
+	padding: 30px;
+	text-align: left;
+	display: inline-flex;
+	flex-direction: column;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.radio-button {
+	margin: 5px;
+}
+
+.mat-card {
+	margin: 50px;
+}

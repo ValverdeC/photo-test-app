@@ -1,0 +1,28 @@
+<div class="main-content">
+	<div class="sidemenu">
+			<md-radio-group class="radio-group" [(ngModel)]="clothingChoice.myVar">
+				<md-radio-button class="radio-button" *ngFor="let clothingItem of clothingList" [value]="clothingItem">
+					{{clothingItem}}
+				</md-radio-button>
+			</md-radio-group>
+	</div>
+	<div class="cards-content">
+		<div class="cards" *ngFor="let clothing of clothings">
+			<md-card class="example-card" *ngIf="clothingChoice.myVar == clothing.type || clothingChoice.myVar == 'Tous'">
+			  <md-card-header>
+			  	<div md-card-avatar [style.background-image]="'url(' + clothing.headerImageUrl + ')' | safe: 'style'" style="background-size: cover;"></div>
+			    <md-card-title>{{clothing.title}}</md-card-title>
+			    <md-card-subtitle>{{clothing.subtitle}}</md-card-subtitle>
+			  </md-card-header>
+			  <img md-card-image [src]="clothing.imageUrl">
+			  <md-card-content>
+			    <p>{{clothing.description}}</p>
+			    <p>Catégorie : {{clothing.type}}</p>
+			  </md-card-content>
+			  <md-card-actions>
+			    <button md-button (click)="openDialog(clothing)" >DÉTAILS</button>
+			  </md-card-actions>
+			</md-card>
+		</div>
+	</div>
+</div>

@@ -23,4 +23,8 @@ export class HomePageComponent {
 		}
 	}
 
+	navigationClick() {
+		document.getElementById('second-slide').scrollIntoView();
+	}
+
 }

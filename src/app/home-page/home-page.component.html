@@ -1,7 +1,14 @@
 <video class="video" [muted]="muted" autoplay loop>
-	<source src="/assets/video/video_test.mp4" type="video/mp4">
+	<source src="./assets/video/video_test.mp4" type="video/mp4">
 </video>
-<div id="first-slide"><button md-button (click)="volumeOnClick()"><md-icon>{{volumeIcon}}</md-icon>Volume {{volume}}</button></div>
+<div id="first-slide">
+	<button md-mini-fab class="volumeFab" (click)="volumeOnClick()">
+		<md-icon>{{volumeIcon}}</md-icon>
+	</button>
+	<button md-fab class="navigationFab" (click)="navigationClick()">
+		<md-icon>arrow_downward</md-icon>
+	</button>
+</div>
 <div id="second-slide" class="slide photo-slide"></div>
 <div id="third-slide" class="slide photo-slide"><div class="filter"></div></div>
 <div id="fourth-slide" class="slide"></div>

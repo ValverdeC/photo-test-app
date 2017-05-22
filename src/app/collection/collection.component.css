@@ -2,5 +2,12 @@
 	margin-top: 100px;
 	text-align: center;
 	height: 100%;
-	padding: 100px 200px 100px 200px;
+	padding: 100px 50px 100px 50px;
+	font-size: 62.5%;
+}
+
+.tile {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }

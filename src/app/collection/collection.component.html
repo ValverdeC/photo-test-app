@@ -1,12 +1,12 @@
 <div class="main-content">
-	<md-grid-list cols="4" rowHeight="">
+	<md-grid-list cols="9" rowHeight="1:1" gutterSize="1rem">
 		<md-grid-tile
 			*ngFor="let tile of tiles"
 			[colspan]="tile.cols"
 			[rowspan]="tile.rows"
-			[style.background]="tile.color"
-			[style.margin-right]="10">
-				{{tile.text}}
+			[style.background-image]="'url(' + tile.photoUrl + ')' | safe: 'style'"
+			[style.margin-right]="10"
+			class="tile">
 		</md-grid-tile>
 	</md-grid-list>
 </div>

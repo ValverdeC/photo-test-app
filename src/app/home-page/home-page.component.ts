@@ -24,7 +24,7 @@ export class HomePageComponent {
 	}
 
 	navigationClick() {
-		document.getElementById('second-slide').scrollIntoView();
+		document.getElementById('second-slide').scrollIntoView({ behavior: 'smooth' });
 	}
 
 }

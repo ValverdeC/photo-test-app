@@ -5,7 +5,7 @@
 			[colspan]="tile.cols"
 			[rowspan]="tile.rows"
 			[style.background-image]="'url(' + tile.photoUrl + ')' | safe: 'style'"
-			[style.margin-right]="10"
+			(click)="tileClick(tile.id)"
 			class="tile">
 		</md-grid-tile>
 	</md-grid-list>

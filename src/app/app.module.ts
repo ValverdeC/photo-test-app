@@ -17,7 +17,7 @@ import { CollectionComponent } from './collection/collection.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { DetailDialogOverviewComponent } from './clothings/detail-dialog-overview/detail-dialog-overview.component';
 import { ClothingsComponent } from './clothings/clothings.component';
-
+import { PhotoDialogOverviewComponent } from './collection/photo-dialog-overview/photo-dialog-overview.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +26,8 @@ import { ClothingsComponent } from './clothings/clothings.component';
     HomePageComponent,
     SafePipe,
     DetailDialogOverviewComponent,
-    ClothingsComponent
+    ClothingsComponent,
+    PhotoDialogOverviewComponent
   ],
   imports: [
     BrowserModule,
@@ -55,6 +56,6 @@ import { ClothingsComponent } from './clothings/clothings.component';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [ DetailDialogOverviewComponent ]
+  entryComponents: [ DetailDialogOverviewComponent, PhotoDialogOverviewComponent ]
 })
 export class AppModule { }

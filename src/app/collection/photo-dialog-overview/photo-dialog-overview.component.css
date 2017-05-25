@@ -1,0 +1,22 @@
+.photo {
+	width: 100%;
+}
+
+/deep/ .mat-dialog-container {
+	overflow: hidden !important;
+}
+
+.button {
+	position: absolute;
+	background-color: rgba(255,255,255, 0.5);
+}
+
+.right {
+	right: 24px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}

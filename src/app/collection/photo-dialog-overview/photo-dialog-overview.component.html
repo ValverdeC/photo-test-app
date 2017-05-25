@@ -1,0 +1,9 @@
+<div class="container">
+	<button md-button class="left button" (click)="leftClick()">
+		<md-icon>navigate_before</md-icon>
+	</button>
+	<img class="photo" [hidden]="loading" [src]="photo.photoUrl" (load)="load()" style="object-fit: cover;">
+	<button md-button class="right button" (click)="rightClick()">
+		<md-icon>navigate_next</md-icon>
+	</button>
+<div>

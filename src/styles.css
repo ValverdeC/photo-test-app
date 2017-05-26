@@ -5,4 +5,21 @@ html, body {
   padding: 0;
   height: 100%;
   width: 100%;
+  font-size: 62.5%;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+@font-face {
+	font-family: 'slide-title';
+	src: url('./assets/fonts/us101.ttf') format('truetype');
+	font-weight: normal;
+    font-style: normal;
+}
+
+p {
+	-webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
 }

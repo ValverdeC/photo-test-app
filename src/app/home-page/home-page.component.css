@@ -1,5 +1,6 @@
 .slide {
-	height: 800px;
+	height: 80vh;
+	box-sizing: border-box;
 }
 
 .photo-slide {
@@ -54,4 +55,12 @@
 	position: absolute;
 	left: 5vh;
 	bottom: 5vh;
+}
+
+.text-title {
+	font-family: slide-title;
+	text-align: center;
+	font-size: 10rem;
+	color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }

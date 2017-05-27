@@ -1,6 +1,8 @@
 .slide {
-	height: 80vh;
+	/*height: 100rem;*/
+	display: inline-block;
 	box-sizing: border-box;
+	padding: 5rem;
 }
 
 .photo-slide {
@@ -60,7 +62,26 @@
 .text-title {
 	font-family: slide-title;
 	text-align: center;
-	font-size: 10rem;
+	font-size: 12.5rem;
 	color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.inline-icon {
+	display: inline-flex;
+	text-align: center;
+}
+
+.text-slide {
+	font-family: slide-text;
+	font-size: 5rem;
+	color: black;
+	display: flex;
+    justify-content:center;
+    flex-direction:column;
+}
+
+.brand-text {
+	font-family: brand-font;
+	font-size: 7rem;
 }

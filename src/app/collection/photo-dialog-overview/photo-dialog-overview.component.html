@@ -1,10 +1,12 @@
 <div class="container">
-	<button md-button class="left button" (click)="leftClick()" [hidden]="loading">
+	<button *ngIf="!loading" md-button class="left button" (click)="leftClick()" [hidden]="loading">
 		<md-icon>navigate_before</md-icon>
 	</button>
-	<md-spinner *ngIf="loading"></md-spinner>
+	<div>
+		<md-spinner *ngIf="loading" class="loading" color="warn"></md-spinner>
+	</div>
 	<img class="photo" [hidden]="loading" [src]="photo.photoUrl" (load)="load()" style="object-fit: cover;">
-	<button md-button class="right button" (click)="rightClick()" [hidden]="loading">
+	<button *ngIf="!loading" md-button class="right button" (click)="rightClick()" [hidden]="loading">
 		<md-icon>navigate_next</md-icon>
 	</button>
 <div>

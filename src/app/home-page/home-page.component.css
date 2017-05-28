@@ -27,6 +27,7 @@
 
 #third-slide {
 	background-image: url(/assets/img/shiba.jpg);
+	width: 100%;
 }
 
 #fourth-slide {
@@ -39,9 +40,8 @@
 
 .filter {
 	background-color: rgba(0, 0, 0, 0.5);
-	height: 100%;
-	width: 100%;
 	padding: 5rem;
+	display: flex;
 }
 
 .video {
@@ -88,4 +88,23 @@
 .brand-text {
 	font-family: brand-font;
 	font-size: 7rem;
+}
+
+.text-icons {
+	font-size: 12.5vw;
+	color: white;
+	height: 12.5vw;
+	width: 12.5vw;
+}
+
+.column {
+	text-align: center;
+	width: 25vw;
+	color: white;
+	margin: auto;
+}
+
+.third-slide-text {
+	font-family: slide-text;
+	font-size: 3rem;
 }

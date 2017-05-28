@@ -6,6 +6,8 @@
 }
 
 .photo-slide {
+	display: inline-block;
+	box-sizing: border-box;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -39,11 +41,12 @@
 	background-color: rgba(0, 0, 0, 0.5);
 	height: 100%;
 	width: 100%;
+	padding: 5rem;
 }
 
 .video {
 	width: 100%;
-	top: -10vh;
+	top: -9vh;
 	position: fixed;
 	z-index: -50;
 }

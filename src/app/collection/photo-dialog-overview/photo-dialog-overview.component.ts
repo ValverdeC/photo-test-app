@@ -27,11 +27,13 @@ export class PhotoDialogOverviewComponent implements OnInit {
 	}
 
 	leftClick() {
+		this.loading = true;
 		this.data > 1 ? this.data-- : this.data = this.tiles.length;
 		this.photo = this.tiles.find(tile => tile.id === this.data);
 	}
 
 	rightClick() {
+		this.loading = true;
 		this.data < this.tiles.length ? this.data++ : this.data = 1;
 		this.photo = this.tiles.find(tile => tile.id === this.data);
 	}

@@ -43,6 +43,7 @@
 
 .video {
 	width: 100%;
+	top: -10vh;
 	position: fixed;
 	z-index: -50;
 }

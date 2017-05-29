@@ -1,9 +1,9 @@
 <div class="main-content">
-	<md-grid-list cols="9" rowHeight="1:1" gutterSize="1rem">
+	<md-grid-list cols="100" rowHeight="1:1" gutterSize="1rem">
 		<md-grid-tile
 			*ngFor="let tile of tiles"
 			[colspan]="tile.cols"
-			[rowspan]="tile.rows"
+			[rowspan]="calculateRow(tile.cols, tile.rows)"
 			[style.background-image]="'url(' + tile.photoUrl + ')' | safe: 'style'"
 			(click)="tileClick(tile.id)"
 			class="tile">

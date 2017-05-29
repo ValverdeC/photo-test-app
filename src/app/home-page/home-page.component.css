@@ -26,7 +26,7 @@
 }
 
 #third-slide {
-	background-image: url(/assets/img/shiba.jpg);
+	background-image: url(/assets/img/gallery/preview_xxs/DSC_8008-Modifier.jpg);
 	width: 100%;
 }
 
@@ -91,7 +91,6 @@
 }
 
 .text-icons {
-	font-size: 12.5vw;
 	color: white;
 	height: 12.5vw;
 	width: 12.5vw;

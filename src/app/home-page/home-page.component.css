@@ -8,7 +8,7 @@
 .photo-slide {
 	display: inline-block;
 	box-sizing: border-box;
-	background-attachment: fixed;
+	/*background-attachment: fixed;*/
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -42,6 +42,8 @@
 	background-color: rgba(0, 0, 0, 0.5);
 	padding: 5rem;
 	display: flex;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
 }
 
 .video {

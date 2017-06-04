@@ -1,11 +1,11 @@
 <div class="main-content">
-	<md-grid-list cols="100" rowHeight="1:1" gutterSize="1rem">
+	<md-grid-list cols="40" rowHeight="1:1" gutterSize="1rem">
 		<md-grid-tile
 			*ngFor="let tile of tiles"
-			[colspan]="tile.cols"
-			[rowspan]="calculateRow(tile.cols, tile.rows)"
+			[colspan]="tile.cols*10"
+			[rowspan]="tile.rows*10"
 			[style.background-image]="'url(' + tile.photoUrl + ')' | safe: 'style'"
-			(click)="tileClick(tile.id)"
+			(click)="tileClick(tile.id, tile.orientation)"
 			class="tile">
 		</md-grid-tile>
 	</md-grid-list>

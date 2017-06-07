@@ -8,7 +8,7 @@
 .photo-slide {
 	display: inline-block;
 	box-sizing: border-box;
-	/*background-attachment: fixed;*/
+	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -32,6 +32,8 @@
 
 #fourth-slide {
 	background-color: white;
+	text-align: center;
+	padding: 10rem 25% 10rem 25%;
 }
 
 /deep/ .mat-sidenav-content {
@@ -80,7 +82,7 @@
 
 .text-slide {
 	font-family: slide-text;
-	font-size: 5rem;
+	font-size: 4rem;
 	color: black;
 	display: flex;
     justify-content:center;
@@ -108,4 +110,8 @@
 .third-slide-text {
 	font-family: slide-text;
 	font-size: 3rem;
+}
+
+#fifth-slide {
+	background-color: #ff4081;
 }

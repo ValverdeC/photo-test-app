@@ -40,7 +40,7 @@ export class CollectionComponent {
         { id: 21, cols: 1, rows: 1.5, photoUrl: './assets/img/gallery/preview_xs/DSC_7330-Modifier.jpg', orientation: 0 },
         { id: 22, cols: 1, rows: 1.5, photoUrl: './assets/img/gallery/preview_xs/DSC_7641-Modifier.jpg', orientation: 0 },
         { id: 23, cols: 1, rows: 1.5, photoUrl: './assets/img/gallery/preview_xs/DSC_7918-Modifier.jpg', orientation: 0 },
-        { id: 24, cols: 1, rows: 1.5, photoUrl: './assets/img/gallery/preview_xs/DSC_7480-Modifier.jpg', orientation: 0 },
+        { id: 24, cols: 1, rows: 1.5, photoUrl: './assets/img/gallery/preview_xs/DSC_7480-Modifier.jpg', orientation: 1 },
         { id: 25, cols: 2, rows: 1.5, photoUrl: './assets/img/gallery/preview_xs/DSC_7325-Modifier.jpg', orientation: 1 },
         { id: 26, cols: 1, rows: 1.5, photoUrl: './assets/img/gallery/preview_xs/DSC_7755-Modifier.jpg', orientation: 0 },
         { id: 27, cols: 2, rows: 3, photoUrl: './assets/img/gallery/preview_xs/DSC_8058-Modifier.jpg', orientation: 0 },

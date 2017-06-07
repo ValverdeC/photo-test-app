@@ -29,6 +29,13 @@ html, body {
     font-style: normal;
 }
 
+@font-face {
+  font-family: 'roboto-thin';
+  src: url('./assets/fonts/Roboto-Thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 p {
 	-webkit-margin-before: 0;
     -webkit-margin-after: 0;

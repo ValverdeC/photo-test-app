@@ -24,27 +24,32 @@
 <md-sidenav-container>
 	<md-sidenav #sidenav align="end" mode="over">
 		<img src="./assets/img/celia_profile.png" style="width: 200px;height: 200px;">
+		<p style="font-family: 'roboto-thin', sans-serif; font-size: 4rem; margin-top: 2rem; letter-spacing: 0.4rem;">CÉLIA<br/>MICHELLAND</p>
+		<p style="font-family: 'roboto-thin', sans-serif; font-size: 2.5rem; margin-top: 2rem;">Styliste - Modéliste<br/>Infographiste</p>
+		<div style="display: grid;">
+			<div style="display: inline-flex; justify-content: center; align-items: center; margin-top: 5rem;">
+				<img src="./assets/img/icons/emoji.png" style="width: 2rem; height: 2rem;">
+				<p style="font-family: 'roboto-thin', sans-serif; font-size: 2.5rem; margin-left: 2rem">21 ans</p>
+			</div>
+			<div style="display: inline-flex; justify-content: center; align-items: center; margin-top: 2rem;">
+				<img src="./assets/img/icons/car.png" style="width: 2rem; height: 2rem;">
+				<p style="font-family: 'roboto-thin', sans-serif; font-size: 2.5rem; margin-left: 2rem">Permis B</p>
+			</div>
+			<div style="display: inline-flex; justify-content: center; align-items: center; margin-top: 2rem;">
+				<img src="./assets/img/icons/map.png" style="width: 2rem; height: 2rem;">
+				<p style="font-family: 'roboto-thin', sans-serif; font-size: 2.5rem; margin-left: 2rem">18, avenue Jean Bergeron<br/>69290 Craponne</p>
+			</div>
+			<div style="display: inline-flex; justify-content: center; align-items: center; margin-top: 2rem;">
+				<img src="./assets/img/icons/mail.png" style="width: 2rem; height: 2rem;">
+				<p style="font-family: 'roboto-thin', sans-serif; font-size: 2.5rem; margin-left: 2rem">cel.michelland@sfr.fr</p>
+			</div>
+			<div style="display: inline-flex; justify-content: center; align-items: center; margin-top: 2rem;">
+				<img src="./assets/img/icons/phone.png" style="width: 2rem; height: 2rem;">
+				<p style="font-family: 'roboto-thin', sans-serif; font-size: 2.5rem; margin-left: 2rem">06.46.75.86.37</p>
+			</div>
+		</div>
 	</md-sidenav>
 
 	<router-outlet></router-outlet>
 
 </md-sidenav-container>
-
-<md-menu #menu="mdMenu" [overlapTrigger]="false">
-	<div md-menu-item>
-		<img src="./assets/img/celia_profile.png" style="width: 20px;height: 20px;">
-		<span>Test</span>
-	</div>
-	<button md-menu-item>Test test test test test test</button>
-	<button md-menu-item>Test</button>
-	<button md-menu-item>Test</button>
-	<button md-menu-item>Test</button>
-</md-menu>
-
-<!--div class="logo-bar">
-	<md-slider min="10" max="20" step="1" value="10" #sizeSlider></md-slider>
-	<gallery
-		[flexBorderSize]="8"
-		[flexImageSize]="10">
-	</gallery>
-</div-->
